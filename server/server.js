@@ -19,6 +19,7 @@ const rollbar = new Rollbar({
 
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
+let students = []
 
 app.post('/api/student', (req, res)=>{
     let {name} = req.body
