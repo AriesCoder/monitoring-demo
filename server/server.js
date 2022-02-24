@@ -41,5 +41,5 @@ app.post('/api/student', (req, res)=>{
 })
 
 const port = process.env.PORT || 4545
-
+app.use(rollbar.errorHandler())
 app.listen(port, ()=>{ console.log(`take us to warp ${port}`)})
